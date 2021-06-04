@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="initAdmin()">
+    <div class="toolbar">
+        <button onclick="onLogOut()" class="log-out-btn">Log Out!</button>
+        <button class="goto-secret-btn" onclick="window.location.href = 'secret.html';">Go To Secret Page</button>
+    </div>
+
+    <h1 class="title-header">Welcome Back <span class="user-name-head"></span>!</h1>
+
+    <div class="users-view-for-admin">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>User Name</th>
+                    <th>Password</th>
+                    <th>Last Login Time</th>
+                    <th>Is Admin</th>
+                </tr>
+            </thead>
+            <tbody class="users-table-admin">
+
+            </tbody>
+        </table>
+
+        <div class="sort-by">
+            <h2>Sort By: </h2>
+
+            <select onchange="onSortUsersTable(this.value)">
+                <option value="" selected disabled>Select Sort</option>
+                <option value="NAME">Name</option>
+                <option value="LAST LOGIN">Last Login</option>
+            </select>
+
+        </div>
+    </div>
+
+
+    <script src="js/services/user-service.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

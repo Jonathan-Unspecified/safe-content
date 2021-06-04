@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    margin: 0;
+}
+
+.goto-secret-btn {
+    margin: 0px 10px;
+    background-color: rgba(36, 182, 36, 0.815);
+    border: none;
+    padding: 10px;
+    border-radius: 3px;
+    color: white;
+}
+
+.goto-secret-btn:hover {
+    background-color: rgba(23, 121, 23, 0.815);
+    cursor: pointer;
+}
+
+.title-header {
+    background-color: rgba(223, 37, 30, 0.719);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.users-view-for-admin {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    gap: 20px;
+}
+
+.sort-by h2 {
+    color: white;
+    display: inline-block;
+}
+
+.sort-by {
+    background-color: black;
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.sort-by select {
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.users-view-for-admin table {
+    width: 90%;
+    border: 2px solid black;
+    background-color: rgba(214, 140, 3, 0.781);
+}
+
+th {
+    border: 1px solid black;
+}
+
+td {
+    border: 1px dashed black;
+}
